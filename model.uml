@@ -12,18 +12,28 @@
       <packagedElement xmi:type="uml:Dependency" xmi:id="_npUw8POwEeaWb9M6vRSn8A" client="_cd9rwPOwEeaWb9M6vRSn8A" supplier="_xjcU4POpEeaWb9M6vRSn8A"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_BR_mQPRLEeaJLO6DEJjqTQ" name="Sistema Inteligente">
-      <packagedElement xmi:type="uml:Class" xmi:id="_kNBlwPRLEeaJLO6DEJjqTQ" name="Visión Artificial" visibility="package"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_lK5GwPRMEeaJLO6DEJjqTQ" name="Aprendizaje Automatico"/>
-      <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_4ba8QPRMEeaJLO6DEJjqTQ" name=""/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_xQoUEPRNEeaJLO6DEJjqTQ" name="Clasificación"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_2IrBEPRNEeaJLO6DEJjqTQ" name="Reconocimiento"/>
       <packagedElement xmi:type="uml:Usage" xmi:id="_MdQdcPROEeaJLO6DEJjqTQ" client="_BR_mQPRLEeaJLO6DEJjqTQ" supplier="_hcOAIPRNEeaJLO6DEJjqTQ"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_xQoUEPRNEeaJLO6DEJjqTQ" name="Clasificación">
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_rnn-kFaBEeeDMImIE2lP5w" name="Clasificación"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_mmwQQFaCEeeDMImIE2lP5w" name="Vision Artificial">
+        <packagedElement xmi:type="uml:Class" xmi:id="_2IrBEPRNEeaJLO6DEJjqTQ" name="Regiones Propuestas" visibility="public"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_JR4ykFaDEeeDMImIE2lP5w" name="Non-Maximum Suppression">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_JR4ykVaDEeeDMImIE2lP5w" name="Clasificación"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_bjgv0FaDEeeDMImIE2lP5w" name="CopyOf_Clasificación_1">
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_bjgv0VaDEeeDMImIE2lP5w" name="Clasificación"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_cAUAkFaDEeeDMImIE2lP5w" name="Aprendizaje Automatico">
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_cAUAkVaDEeeDMImIE2lP5w" name="Clasificación"/>
+      </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_CUn2APRNEeaJLO6DEJjqTQ" name="Imagenes Satelitales Terrestres"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_LTiRwPRNEeaJLO6DEJjqTQ" name="Conjunto de Patrones "/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_hcOAIPRNEeaJLO6DEJjqTQ" name="Patron Reconocido"/>
-    <packagedElement xmi:type="uml:Usage" xmi:id="_LTKo4PROEeaJLO6DEJjqTQ" client="_LTiRwPRNEeaJLO6DEJjqTQ" supplier="_BR_mQPRLEeaJLO6DEJjqTQ"/>
-    <packagedElement xmi:type="uml:Usage" xmi:id="_L6cEQPROEeaJLO6DEJjqTQ" client="_CUn2APRNEeaJLO6DEJjqTQ" supplier="_BR_mQPRLEeaJLO6DEJjqTQ"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_CUn2APRNEeaJLO6DEJjqTQ" name="Datasets (imagenes satelitales)"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_LTiRwPRNEeaJLO6DEJjqTQ" name="Ground Truth (Anotaciones)"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_hcOAIPRNEeaJLO6DEJjqTQ" name="Predicciones"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_TQQDsFaEEeeDMImIE2lP5w" client="_LTiRwPRNEeaJLO6DEJjqTQ" supplier="_BR_mQPRLEeaJLO6DEJjqTQ"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_UyNlsFaEEeeDMImIE2lP5w" client="_CUn2APRNEeaJLO6DEJjqTQ" supplier="_BR_mQPRLEeaJLO6DEJjqTQ"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_vRdykPOmEeaWb9M6vRSn8A">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_vRfAsPOmEeaWb9M6vRSn8A" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#/"/>
@@ -92,11 +102,16 @@
     </profileApplication>
   </uml:Model>
   <Blocks:Block xmi:id="_vUU5UPOmEeaWb9M6vRSn8A" base_Class="_vUQn4POmEeaWb9M6vRSn8A"/>
-  <Blocks:Block xmi:id="_kNCz4PRLEeaJLO6DEJjqTQ" base_Class="_kNBlwPRLEeaJLO6DEJjqTQ"/>
-  <Blocks:Block xmi:id="_lK6U4PRMEeaJLO6DEJjqTQ" base_Class="_lK5GwPRMEeaJLO6DEJjqTQ"/>
   <Blocks:Block xmi:id="_CUq5UPRNEeaJLO6DEJjqTQ" base_Class="_CUn2APRNEeaJLO6DEJjqTQ"/>
   <Blocks:Block xmi:id="_LTi40PRNEeaJLO6DEJjqTQ" base_Class="_LTiRwPRNEeaJLO6DEJjqTQ"/>
   <Blocks:Block xmi:id="_hcP1UPRNEeaJLO6DEJjqTQ" base_Class="_hcOAIPRNEeaJLO6DEJjqTQ"/>
   <Blocks:Block xmi:id="_xQo7IPRNEeaJLO6DEJjqTQ" base_Class="_xQoUEPRNEeaJLO6DEJjqTQ"/>
   <Blocks:Block xmi:id="_2IroIPRNEeaJLO6DEJjqTQ" base_Class="_2IrBEPRNEeaJLO6DEJjqTQ"/>
+  <Blocks:Block xmi:id="_rnpzwFaBEeeDMImIE2lP5w" base_Class="_rnn-kFaBEeeDMImIE2lP5w"/>
+  <Blocks:Block xmi:id="_JR6AsFaDEeeDMImIE2lP5w" base_Class="_JR4ykVaDEeeDMImIE2lP5w"/>
+  <Blocks:Block xmi:id="_JR6AsVaDEeeDMImIE2lP5w" base_Class="_JR4ykFaDEeeDMImIE2lP5w"/>
+  <Blocks:Block xmi:id="_bjh98FaDEeeDMImIE2lP5w" base_Class="_bjgv0VaDEeeDMImIE2lP5w"/>
+  <Blocks:Block xmi:id="_bjh98VaDEeeDMImIE2lP5w" base_Class="_bjgv0FaDEeeDMImIE2lP5w"/>
+  <Blocks:Block xmi:id="_cAVOsFaDEeeDMImIE2lP5w" base_Class="_cAUAkVaDEeeDMImIE2lP5w"/>
+  <Blocks:Block xmi:id="_cAVOsVaDEeeDMImIE2lP5w" base_Class="_cAUAkFaDEeeDMImIE2lP5w"/>
 </xmi:XMI>
